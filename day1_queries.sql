@@ -19,7 +19,7 @@ SELECT * FROM employees WHERE Age > 30;
 -- Find employees who have benched before 
 SELECT * FROM employees WHERE EverBenched = 'Yes';
 
--- To get the gender distribution of employees
+-- To get the gender distribution of employees. This query groups all rows by the Gender column, counting how many employees are in each gender category
 SELECT Gender, Count(*) AS COUNT FROM employees GROUP BY Gender;
 
 -- To get how many employees stayed vs those who stayed
